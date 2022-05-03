@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="styless.css">
+
+    <!--FONTS LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <!--FONT LINK END -->
+
+    <!--CDN FOR TEST-->
+    <link rel="stylesheet" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="title">Salman's Survey Form</h1>
+        <p id="description">Thank you for taking your time answering this survey, so i can serve you better</p>
+    </div>
+    
+
+    <form action="" id="survey-form">
+        
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" class="form-control" placeholder="Your name" required>
+        </div>
+       
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="example@email.com" required>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="age" id="age-label">Age</label>
+            <input type="number" class="form-control" name="age" id="age" min="10" max="99" placeholder="Age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="current-role" class="question">What option best describes your current role?</label>
+          <select name="role" id="dropdown" class="form-control">
+            <option value="disabled" selected>--Select current role--</option>
+            <option value="client">Client</option>
+            <option value="student">Student</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+              
+       <div class="radio-buttons form-group">
+           <p>Would you recommend me to your friend?</p>
+        <label for="Most Definitely">
+            <input type="radio" name="recommendation" value="most-definetely" class="radiobtn">
+            Most Definitely
+        </label>
+        <label for="Definitely">
+            <input type="radio" name="recommendation" value="definetely" class="radiobtn">
+            Definitely
+        </label>
+        <label for="Most Likely">
+            <input type="radio" name="recommendation" value="most-likely" class="radiobtn">
+            Most Likely
+        </label>
+        <label for="Likely">
+            <input type="radio" name="recommendation" value="likely" class="radiobtn">
+            Likely
+        </label>
+        <label for="Not Sure">
+            <input type="radio" name="recommendation" value="not-sure" class="radiobtn">
+            Not Sure
+        </label>
+       </div>
+        
+        <div class="form-group">
+            <p>What would you like to see improved?</p>
+        <label for="Front-end">
+            <input type="checkbox" value="front-end" name="skills" class="checkbox">
+            Front-end
+        </label>
+
+        <label for="Back-end">
+            <input type="checkbox" value="back-end" name="skills" class="checkbox">
+            Back-end
+        </label>
+
+        <label for="UI-design">
+            <input type="checkbox" value="ui design" name="skills" class="checkbox">
+            UI design
+        </label>
+        <label for="UX-design">
+            <input type="checkbox" value="ux design" name="skills" class="checkbox">
+            UX design
+        </label>
+        <label for="Social-presence">
+            <input type="checkbox" value="social pressure" name="skills" class="checkbox">
+            Social presence
+        </label>
+        </div>
+       
+       
+       <div class="form-group">
+           <p>Any comments or suggestions?</p>
+        <textarea name="additional-comment" id="additional-comment" cols="30" rows="10" placeholder="Additional comment....."></textarea>
+
+       </div> 
+       
+      <div class="form-group">
+        <button type="submit" id="submit"  class="btn">Submit</button>
+       </div>
+    </form>
+</body>
+</html>
